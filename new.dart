@@ -16,22 +16,17 @@ void baiscs() {
 
 //Class (blueprint)
 class User {
-  
-
   String username;
   int age;
 
-  User(String a, int b) {
-    username = a;
-    age = b;
-  }
+  User(this.username, this.age);
   void login() {
     print("user logged in");
   }
 }
 
 void main() {
-  User userone = User('mario',12);
+  User userone = User('mario', 12);
   print(userone.username);
 
   User usertwo = User('bario', 32);
