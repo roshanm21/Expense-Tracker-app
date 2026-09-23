@@ -25,7 +25,7 @@ class User {
   }
 }
 
-void main() {
+void callofuserclass() {
   User userone = User('mario', 12);
   print(userone.username);
 
@@ -33,3 +33,26 @@ void main() {
   print(usertwo.username);
 }
 
+void main() {
+  //Variable types
+  var somevalue1 = 10;
+  const somevalue2 = 20;
+  final somevalue3 = 30;
+
+  print(somevalue1);
+  print(somevalue2);
+  print(somevalue3);
+  print('----------');
+  somevalue1 = 100;
+  // somevalue2 = 200;  --- will give error
+  // somevalue3 = 300;  --- will give error
+  print(somevalue1);
+  print(somevalue2);
+  print(somevalue3);
+
+  //Difference between final and const
+  // const datetimedata1 = DateTime.now();  <--- can not assign Datetime.now() to constant
+  final datetimedata2 = DateTime.now();
+  // print(datetimedata1);
+  print(datetimedata2);
+}
